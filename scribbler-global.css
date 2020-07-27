@@ -168,6 +168,10 @@ hr {
   color: var(--accent-color);
 }
 
+.link--code {
+  color: var(--primary-color-light)
+}
+
 /* menu */
 nav {
   display: grid;
