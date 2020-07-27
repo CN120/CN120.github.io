@@ -12,23 +12,23 @@ var getAll = function (selector, scope) {
 // setup typewriter effect in the terminal demo
 if (document.getElementsByClassName('demo').length > 0) {
   var i = 0;
-  var txt = `./basic_profile "Chris Nelson"
-            Degree from: Santa Clara University
+  var txt = `profile "Chris Nelson"
+      Degree from: Santa Clara University
 			Class of: 2020
 			Area of study: Computer Science & Engineering
 
-            ### Notable Skills
+      ### Notable Skills
 			- understanding of core computer science principles
-            - knowledge of abstract data structures
-            - proficient in C/C++ and Python 3
-            - experience with Java and JavaScript
-            - familiarity with machine learning and computer vision libraries
+      - knowledge of abstract data structures
+      - proficient in C/C++ and Python 3
+      - experience with Java and JavaScript
+      - familiarity with machine learning and computer vision libraries
 
 			### Personal Qualities
 			- good work ethic
 			- communicates ideas well
 			- works well with a team`
-  var speed = 10;
+  var speed = 60;
 
   function typeItOut () {
     if (i < txt.length) {
