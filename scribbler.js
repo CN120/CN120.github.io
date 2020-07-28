@@ -78,7 +78,7 @@ window.addEventListener("load", function() {
 
 function expandChangelog() {
   // document.getElementsByClassName("changelog__expanded")[0].style.display = "block";
-  // document.getElementById('SeeButton').style.visibility = 'hidden';
+  document.getElementById('SeeButton').style.visibility = 'hidden';
   var expand = document.getElementsByClassName("changelog__expanded")[0];
   if (expand.maxHeight){
     expand.style.maxHeight = null;
