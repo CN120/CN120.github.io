@@ -37,7 +37,6 @@ if (document.getElementsByClassName('demo').length > 0) {
       setTimeout(typeItOut, speed);
     }
   }
-
   setTimeout(typeItOut, 1800);
 }
 
@@ -79,10 +78,10 @@ window.addEventListener("load", function() {
 
 function expandChangelog() {
   // document.getElementsByClassName("changelog__expanded")[0].style.display = "block";
-  document.getElementById('SeeButton').style.visibility = 'hidden';
+  // document.getElementById('SeeButton').style.visibility = 'hidden';
   var expand = document.getElementsByClassName("changelog__expanded")[0];
   if (expand.maxHeight){
-    expand.style.maxHeight = "0px";
+    expand.style.maxHeight = null;
   } else {
     expand.style.maxHeight = expand.scrollHeight + "px";
   } 

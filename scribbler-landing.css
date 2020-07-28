@@ -1,6 +1,6 @@
 /* nav specialized to landing page */
 .logo {
-  background: url('logo.png') no-repeat;
+  background: url('logo.svg') no-repeat;
   background-size: contain;
   margin: 1rem 0 0 1rem;
 }
@@ -138,6 +138,7 @@ nav {
 
 .changelog__meta {
   flex-basis: 30%;
+  /* display: table-column; */
 }
 
 .changelog__meta small {
@@ -155,6 +156,10 @@ nav {
   text-align: center;
 }
 
+.changelog__detail {
+  max-width: 42rem;
+  /* justify-content: left; */
+}
 .changelog__expanded{
   /* padding: 0 18px; */
   max-height: 0;

@@ -11,6 +11,7 @@
   --dark-gray-color: #444D56; 
   --bg-color: #F8F8FA;
   --code-bg-color: #F0E8E8;
+  --chris-color: #3380B3;
 }
 
 /* normalized */
@@ -304,8 +305,8 @@ table td:first-child {
 .footer {
   text-align: center;
   background-color: var(--primary-color);
-  padding: 2rem;
-  color: white;
+  padding: 1rem;
+  color: var(--primary-color-light);
 }
 
 @keyframes fadeUp {
