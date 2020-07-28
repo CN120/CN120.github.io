@@ -143,11 +143,13 @@ hr {
   padding: 10px 22px;
   border: 2px solid var(--primary-color);
   transition: all 0.5s ease-out;
+  cursor:pointer;
 }
 
 .button--secondary:hover {
   border-color: var(--accent-color);
   color: var(--accent-color);
+  cursor:pointer;
 }
 
 /* links */

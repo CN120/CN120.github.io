@@ -137,7 +137,7 @@ nav {
 }
 
 .changelog__meta {
-  flex-basis: 25%;
+  flex-basis: 30%;
 }
 
 .changelog__meta small {
@@ -154,6 +154,15 @@ nav {
   margin: 3rem auto 2rem auto;
   text-align: center;
 }
+
+.changelog__expanded{
+  /* padding: 0 18px; */
+  max-height: 0;
+  
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
 
 @media (max-width: 750px) {
   .hero__terminal {

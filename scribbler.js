@@ -17,17 +17,17 @@ if (document.getElementsByClassName('demo').length > 0) {
 			Class of: 2020
 			Area of study: Computer Science & Engineering
 
-      ### Notable Skills
+      Notable Skills
 			- understanding of core computer science principles
       - knowledge of abstract data structures
       - proficient in C/C++ and Python 3
       - experience with Java and JavaScript
       - familiarity with machine learning and computer vision libraries
 
-			### Personal Qualities
-			- good work ethic
-			- communicates ideas well
-			- works well with a team`
+			Personal Qualities
+			- strong work ethic
+			- good technical & non-technical communicator 
+			- excels in a collaborative work environment`
   var speed = 60;
 
   function typeItOut () {
@@ -74,6 +74,21 @@ window.addEventListener("load", function() {
     activePane.classList.add('active');
   }
 });
+
+//changelog button
+
+function expandChangelog() {
+  // document.getElementsByClassName("changelog__expanded")[0].style.display = "block";
+  document.getElementById('SeeButton').style.visibility = 'hidden';
+  var expand = document.getElementsByClassName("changelog__expanded")[0];
+  if (expand.maxHeight){
+    expand.style.maxHeight = "0px";
+  } else {
+    expand.style.maxHeight = expand.scrollHeight + "px";
+  } 
+}
+
+
 
 //in page scrolling for documentaiton page
 var btns = getAll('.js-btn');
