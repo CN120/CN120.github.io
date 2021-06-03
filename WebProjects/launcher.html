@@ -11,9 +11,16 @@ function popup() {
     <title>Web Launcher</title>
 </head>
 <body>
-<script>
-  link = window.clipboardData.getData('Text');
-	window.open(link,"Perosnal Gmail","resizable=yes,toolbar=yes,scrollbars=no,menubar=no,status=no,directories=no,width=1550,height=860,left=50,top=110");
-</script>
+	<!-- <iframe src="https://calendar.google.com/calendar/u/0/r" width="100%" height="400px"></iframe> -->
+	<script>
+	  // link = window.clipboardData.getData('Text');
+		// window.open(link,"Perosnal Gmail","resizable=yes,toolbar=yes,scrollbars=no,menubar=no,status=no,directories=no,width=1550,height=860,left=50,top=110");
+		var a = window.open("https://calendar.google.com/calendar/u/0/r","Perosnal Gmail","resizable=yes,toolbar=yes,scrollbars=no,menubar=no,status=no,directories=no,width=1550,height=860,left=50,top=110");
+		a.focus();
+
+		a.addEventListener('load', function(){
+		  a.myfunction("hi");
+		}, true);
+	</script>
 </body>
 </html>
