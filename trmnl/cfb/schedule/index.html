@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="light" />
-    <title>Stanford Football — 2026 Schedule</title>
+    <title>College Football Schedule</title>
     <link rel="preconnect" href="https://site.api.espn.com" />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -12,9 +12,9 @@
     <main class="board" aria-live="polite">
       <header class="masthead">
         <div class="brand">
-          <img class="team-logo" src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/24.png" alt="Stanford Cardinal logo" />
+          <img class="team-logo" id="team-logo" alt="" hidden />
           <div>
-            <p class="eyebrow">STANFORD CARDINAL</p>
+            <p class="eyebrow" id="team-name">COLLEGE FOOTBALL</p>
             <h1>Football <span>Schedule</span></h1>
           </div>
         </div>
@@ -37,7 +37,7 @@
         </div>
       </section>
 
-      <section class="schedule" aria-label="Stanford football schedule">
+      <section class="schedule" id="schedule" aria-label="College football schedule">
         <div class="schedule-heading">
           <span>FULL SCHEDULE</span>
           <span id="record">SCHEDULE LOADING</span>
@@ -46,7 +46,7 @@
       </section>
 
       <footer>
-        <span>GO CARDINAL</span>
+        <span id="team-rally">COLLEGE FOOTBALL</span>
         <span class="rule"></span>
         <span id="updated">ESPN SCHEDULE DATA</span>
       </footer>
