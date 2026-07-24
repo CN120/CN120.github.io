@@ -1,5 +1,5 @@
 const season = new Date().getFullYear();
-const teamId = new URLSearchParams(window.location.search).get('id');
+const teamId = document.currentScript.dataset.teamId || new URLSearchParams(window.location.search).get('id');
 const $ = (selector) => document.querySelector(selector);
 const dateFormat = (date, options) => new Intl.DateTimeFormat('en-US', options).format(new Date(date));
 
@@ -126,7 +126,7 @@ function render(games) {
 if (!/^\d+$/.test(teamId || '')) {
   showState('Team ID required', 'Add ?id=TEAM_ID to this URL. Find it on your school’s ESPN team page: the ID is the number after /id/ (for example, 24 in espn.com/college-football/team/_/id/24/stanford-cardinal).', 'TEAM ID REQUIRED');
 } else {
-  const endpoint = `https://site.api.espn.com/apis/site/v2/sports/football/college-football/teams/${teamId}/schedule?season=${season}&seasontype=2`;
+  const endpoint = `https://site.api.espn.com/apis/site/v2/sports/football/college-football/teams/${teamId}/schedule?season=${season}&seasontype=2&lang=en&region=de`;
   fetch(endpoint, { cache: 'no-store' })
     .then((response) => response.ok ? response.json() : Promise.reject(response.status))
     .then((data) => {
