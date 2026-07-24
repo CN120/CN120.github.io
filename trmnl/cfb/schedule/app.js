@@ -108,10 +108,10 @@ function render(games) {
     const opponentName = game.opponent.team.displayName;
     const logo = teamLogo(game.opponent.team);
     return `<article class="game ${game === next ? 'next' : ''}">
-      <div class="game-date"><b>${game.day}</b><span>${game.month}</span></div>
+      <div class="game-logo">${logo ? `<img class="opponent-logo" src="${logo}" alt="${opponentName} logo">` : ''}</div>
       <div class="opponent">
-        <div class="opponent-name">${logo ? `<img class="opponent-logo" src="${logo}" alt="${opponentName} logo">` : ''}<span>${game.home ? 'vs. ' : 'at '}${opponentName}</span></div>
-        <small>${gameLocation(game)}</small>
+        <div class="opponent-name"><span>${game.home ? 'vs. ' : 'at '}${opponentName}</span></div>
+        <small>${game.month} ${game.day} - ${gameLocation(game)}</small>
       </div>
       <div class="status ${game.finished ? 'final' : ''}">${result(game)}${game.finished ? '' : `<small>${game.network}</small>`}</div>
     </article>`;
