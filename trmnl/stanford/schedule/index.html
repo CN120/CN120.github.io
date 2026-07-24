@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <title>Stanford Football — 2026 Schedule</title>
+    <link rel="preconnect" href="https://site.api.espn.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="board" aria-live="polite">
+      <header class="masthead">
+        <div class="brand">
+          <img class="team-logo" src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/24.png" alt="Stanford Cardinal logo" />
+          <div>
+            <p class="eyebrow">STANFORD CARDINAL</p>
+            <h1>Football <span>Schedule</span></h1>
+          </div>
+        </div>
+        <div class="season-lockup">
+          <strong id="season">2026</strong>
+          <span>SEASON</span>
+        </div>
+      </header>
+
+      <section class="hero" id="next-game">
+        <div class="hero-label">NEXT GAME</div>
+        <div class="hero-content">
+          <div class="date-block"><span id="next-month">AUG</span><b id="next-day">29</b><small id="next-weekday">SATURDAY</small></div>
+          <div class="matchup">
+            <p id="next-context">AWAY GAME</p>
+            <h2 id="next-opponent">at Hawai'i</h2>
+            <div id="next-details">TBD · Honolulu, HI</div>
+          </div>
+          <div class="countdown"><strong id="count-number">—</strong><span id="count-label">DAYS AWAY</span></div>
+        </div>
+      </section>
+
+      <section class="schedule" aria-label="Stanford football schedule">
+        <div class="schedule-heading">
+          <span>FULL SCHEDULE</span>
+          <span id="record">SCHEDULE LOADING</span>
+        </div>
+        <div class="games" id="games"></div>
+      </section>
+
+      <footer>
+        <span>GO CARDINAL</span>
+        <span class="rule"></span>
+        <span id="updated">ESPN SCHEDULE DATA</span>
+      </footer>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
